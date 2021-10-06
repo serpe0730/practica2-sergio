@@ -1,7 +1,7 @@
-name: Mensaje de apertura
+name: MsjOpen
 on:
   issues:
-    types: closed
+    types: opened
 jobs:
   AlAbrir:
     runs-on: ubuntu-latest
