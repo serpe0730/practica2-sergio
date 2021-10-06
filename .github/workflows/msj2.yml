@@ -1,1 +1,9 @@
-
+name: Mensaje de apertura
+on:
+  issues:
+    types: closed
+jobs:
+  AlAbrir:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Caso abierto ${{ github.event.issue.number }}"
