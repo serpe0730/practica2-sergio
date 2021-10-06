@@ -2,9 +2,9 @@ name: Matrix
 on: [push]
 jobs:
   build:
-  runs-on: ubuntu-latest
-  strategy:
-    matrix:
-      node: [6, 8, 10]
-  steps:
-    - run: echo "Caso ${{ matrix.node }}"
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [6, 8, 10]
+    steps:
+      - run: echo "Caso ${{ matrix.node }}"
