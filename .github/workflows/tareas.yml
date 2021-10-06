@@ -1,0 +1,15 @@
+name: TareasMult
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Debe crearse primero"
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    - run: echo "Puede modificarse"
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Puede modificarse"
