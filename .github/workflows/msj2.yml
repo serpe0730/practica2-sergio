@@ -1,4 +1,4 @@
-name: Mensaje de apertura
+name: MsjClose
 on:
   issues:
     types: closed
@@ -6,4 +6,4 @@ jobs:
   AlAbrir:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Caso abierto ${{ github.event.issue.number }}"
+      - run: echo "Caso cerrdo ${{ github.event.issue.number }}"
