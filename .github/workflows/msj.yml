@@ -1,7 +1,7 @@
 name: Mensaje de apertura
 on:
   issues:
-    types: opened
+    types: closed
 jobs:
   AlAbrir:
     runs-on: ubuntu-latest
